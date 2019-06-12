@@ -1,13 +1,55 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+  background: rgba(34, 34, 34, 0);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.category-image {
+  width: 48px;
+}
+
+.category-link {
+  /*border: 2px solid rgba(84, 84, 84, 0.69);*/
+  /*border-radius: 3%;*/
+}
+
+.category-link-clicked {
+  background: rgba(255, 72, 0, 0.56);
+  /*border: 2px solid rgba(84, 84, 84, 0.69);*/
+  /*border-radius: 3%;*/
+}
+
+.categories-holder {
+  border: solid 1px gray;
+  border-radius: 3%;
+}
+
+html {
+  background: url("images/tesla1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.form-group-custom{
+  margin-bottom: 0.3rem;
+}
+
+.queries-holder {
+  background: rgba(212, 212, 212, 0.9);
+  padding-bottom: 0.5rem;
+}
+
+label {
+  margin-bottom: 0.1rem;
+}
+
+.text-holder {
+  height: 100%;
+}
+
+.btn-no-radius {
+  border-radius: 0;
 }
