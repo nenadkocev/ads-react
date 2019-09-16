@@ -27,4 +27,4 @@ git clone https://github.com/nenadkocev/ads-react
 Во рамките на овој проект не се прикачени back-end сервисот и базата од огласи која е релативно голема (>200MB) па затоа е поставено демо видео за демонстрација на апликацијата.
 ## Демо
 
-[![Watch the video](https://img.youtube.com/vi/SxnEpEkZ2mA/maxresdefault.jpg)](https://youtu.be/SxnEpEkZ2mA)
+[![Watch the video](https://i.imgur.com/I1ncrI1.png)](https://youtu.be/SxnEpEkZ2mA)
