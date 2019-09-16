@@ -6,14 +6,14 @@
 * Ненад Коцев 161196
 
 ## Технологии
-За изработка front-end апликацијата употрбени се следните технологии:
+За изработка front-end апликацијата употребени се следните технологии:
 * [React](<https://reactjs.org/>)
 * [Twitter Bootstrap](<http://twitter.github.com/bootstrap/>)
 
 ## Инсталација
 Симнете го проектот на вашиот компјутер со следната команда:
 
-git clone https://github.com/nenadkocev/ads-react
+### `git clone https://github.com/nenadkocev/ads-react`
 
 Во директириумот на проектот, извршете ја командата:
 
