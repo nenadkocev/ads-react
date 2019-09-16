@@ -1,7 +1,6 @@
 import React from 'react';
 import SingleOptionFilter from "../Filters/singleOptionFilter";
 import FromToFilter from "../Filters/fromToFilter";
-import MultipleChoiseFilter from "../Filters/multipleChoiseFilter";
 
 class MotorbikeQuery extends React.Component {
 
@@ -58,7 +57,7 @@ class MotorbikeQuery extends React.Component {
 
         return(
             <div>
-                <form method="get" action="/ads">
+                <form method="get" action="http://www.localhost:3000/ads">
                     <div className="row">
                         <div className="col">
                             <SingleOptionFilter options={manufacturers} labelName="Марка: " id="manufacturer" requestName="manu"/>

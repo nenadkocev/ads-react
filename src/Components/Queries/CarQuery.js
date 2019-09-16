@@ -2,6 +2,7 @@ import React from 'react';
 import SingleOptionFilter from "../Filters/singleOptionFilter";
 import FromToFilter from "../Filters/fromToFilter";
 import MultipleChoiseFilter from "../Filters/multipleChoiseFilter";
+import {serverURL, appPort} from "../../constants";
 
 class CarQuery extends React.Component {
 
@@ -34,7 +35,7 @@ class CarQuery extends React.Component {
 
     async componentDidMount() {
         if(this.state.manufacturers.length === 0){
-            const url = "http://www.localhost:8080/res/manufacturers";
+            const url = serverURL + "/res/manufacturers";
             const response = await fetch(url);
             const data = await response.json();
 
@@ -47,7 +48,7 @@ class CarQuery extends React.Component {
     async onManufacturerClicked(manufacturer){
         let models = [];
         if(manufacturer !== "Сите производители"){
-            const url = "http://www.localhost:8080/res/models?man=" + manufacturer;
+            const url = serverURL + "/res/models?man=" + manufacturer;
             const response = await fetch(url);
             const data = await response.json();
 
@@ -80,10 +81,10 @@ class CarQuery extends React.Component {
         let locations = this.state.locations;
         let fuelTypes = ["Дизел", "Бензин", "Бензин / Плин", "Хибрид", "Електричен автомобил", "Друго"];
         let gearBoxes = ["Рачен", "Автоматски", "Steptronic / Tiptronic"];
-
+        let action = "http://www.localhost:" + appPort + "/ads";
         return(
             <div>
-                <form method="get" action="http://www.localhost:8080/ad/all">
+                <form method="get" action={action}>
                     <div className="row">
                         <div className="col">
                             <SingleOptionFilter options={manufacturers} labelName="Марка: " id="manufacturer" requestName="manu" onClick={this.onManufacturerClicked}/>
